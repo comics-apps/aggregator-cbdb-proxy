@@ -3,8 +3,11 @@ require "roda"
 
 class App < Roda
   plugin :json
+  plugin :basic_auth
 
   route do |r|
+    r.basic_auth { |user, pass| [user, pass] == [ENV["BASIC_USER"], ENV["BASIC_PASSWORD"]] }
+
     r.root do
       { status: "OK" }
     end
