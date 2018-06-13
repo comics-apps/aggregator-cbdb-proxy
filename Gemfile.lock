@@ -1,0 +1,28 @@
+GIT
+  remote: git://github.com/comics-apps/cdb-crawlr.git
+  revision: 2be45459ce9d458157e50b1b0fc0946cfc50c1b6
+  specs:
+    cdb-crawlr (0.3.3)
+      nokogiri
+      thor (~> 0.20)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mini_portile2 (2.3.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
+    rack (2.0.5)
+    roda (3.9.0)
+      rack
+    thor (0.20.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cdb-crawlr!
+  roda
+
+BUNDLED WITH
+   1.16.1
