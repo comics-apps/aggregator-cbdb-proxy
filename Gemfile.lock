@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/comics-apps/cdb-crawlr.git
-  revision: 2be45459ce9d458157e50b1b0fc0946cfc50c1b6
+  revision: 9ca882ce641c1377d26c2c141b3084a6b05e5033
   specs:
     cdb-crawlr (0.3.3)
       nokogiri
