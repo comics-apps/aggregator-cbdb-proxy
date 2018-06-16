@@ -2,7 +2,7 @@ require "cdb-crawlr"
 require "roda"
 
 class App < Roda
-  plugin :json
+  plugin :json, classes: [Array, Hash, CDB::Series, CDB::Issue]
   plugin :basic_auth
 
   route do |r|
