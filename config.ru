@@ -19,9 +19,9 @@ class App < Roda
         end
       end
 
-      r.is ":id" do
+      r.is :id do |id|
         r.get do
-          CDB::Series.show(r.params[:id], user_agent: ENV["USER_AGENT"])
+          CDB::Series.show(id, user_agent: ENV["USER_AGENT"])
         end
       end
     end
