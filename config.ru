@@ -21,7 +21,9 @@ class App < Roda
 
       r.is :id do |id|
         r.get do
-          CDB::Series.show(id, user_agent: ENV["USER_AGENT"])
+          series = CDB::Series.show(id, user_agent: ENV["USER_AGENT"])
+          series.issues = series.issues.map{ |i| i.series = nil; i }
+          series
         end
       end
     end
