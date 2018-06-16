@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/comics-apps/cdb-crawlr.git
-  revision: 9ca882ce641c1377d26c2c141b3084a6b05e5033
+  revision: 7f3697a3abe4d4997d6a59d920758bafa26513c8
   specs:
     cdb-crawlr (0.3.3)
       nokogiri
@@ -10,7 +10,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     mini_portile2 (2.3.0)
-    nokogiri (1.8.2)
+    nokogiri (1.8.3)
       mini_portile2 (~> 2.3.0)
     rack (2.0.5)
     roda (3.9.0)
