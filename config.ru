@@ -12,6 +12,14 @@ class App < Roda
       { status: "OK" }
     end
 
+    r.on "publishers" do
+      r.is :id do |id|
+        r.get do
+          CDB::Publisher.show(id, user_agent: ENV["USER_AGENT"])
+        end
+      end
+    end
+
     r.on "series" do
       r.is do
         r.get do
